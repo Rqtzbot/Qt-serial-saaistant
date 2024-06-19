@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>905</width>
+    <height>771</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_32">
+      <item>
+       <widget class="QLabel" name="icon">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="little_2">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>串口调试助手</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_11">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="mode">
+        <property name="styleSheet">
+         <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>夜间模式</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="switch_2">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_12">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="little">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_13">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="large">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_14">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="close">
+        <property name="styleSheet">
+         <string notr="true">opacity:0.3</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_24" stretch="3,0,1">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>数据接收缓冲区</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="styleSheet">
+           <string notr="true">QTextEdit{
+	background-color: rgb(255, 255, 255);
+	font: 10pt &quot;微软雅黑&quot;;
+
+    border-color:#c3c3c3;
+    border-radius: 18px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rhex">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>16进制显示模式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rtext">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>文本显示模式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rflie">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;传输文件时选择该模式，否则会乱码&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>文件显示模式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="timefreq">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>时间戳</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>每次读取长度</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="length">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	font: 75 9pt &quot;微软雅黑&quot;;
+    border-color:#999999;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>10</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="lengthbtn">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	font: 9pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <property name="text">
+             <string>设置</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="rclear">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	font: 9pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <property name="text">
+             <string>清空</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="rsave">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	font: 9pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <property name="text">
+             <string>保存到文件</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="udapteport">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 255);
+	font: 9pt &quot;微软雅黑&quot;;
+    color: #080808;
+
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <property name="text">
+             <string>刷新串口</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_14" stretch="0,0">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>选择串口</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="portname">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QComboBox{
+	font: 75 9pt &quot;微软雅黑&quot;;
+    border-color: #cacaca;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+QComboBox::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="1,2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>波特率</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="bound">
+            <property name="styleSheet">
+             <string notr="true">QComboBox{
+	font: 75 9pt &quot;微软雅黑&quot;;
+    border-color: #cacaca;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+QComboBox::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="1,2">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>数据位</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="databit">
+            <property name="styleSheet">
+             <string notr="true">QComboBox{
+	font: 75 9pt &quot;微软雅黑&quot;;
+
+    border-color: #cacaca;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+QComboBox::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>9</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>10</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>11</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_29" stretch="1,2">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>校验位</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="partbit">
+            <property name="styleSheet">
+             <string notr="true">QComboBox{
+	font: 75 9pt &quot;微软雅黑&quot;;
+
+    border-color: #cacaca;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+QComboBox::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>None</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Odd</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Even</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_30" stretch="1,2">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>停止位</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="stopbit">
+            <property name="styleSheet">
+             <string notr="true">QComboBox{
+	font: 75 9pt &quot;微软雅黑&quot;;
+
+    border-color: #cacaca;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+QComboBox::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1.5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_31" stretch="0,0">
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="styleSheet">
+             <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>串口操作</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QToolButton" name="openport">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>4</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>OpenHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QToolButton{
+	font: 75 12pt &quot;微软雅黑&quot;;
+    color: #ff2b2b;
+    background-color:#ffffff;
+    border-color:#a5a5a5;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px;
+}
+QToolButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <property name="text">
+             <string>打开串口</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_13">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>数据发送缓冲区</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit">
+          <property name="styleSheet">
+           <string notr="true">QTextEdit{or: rgb(245, 245, 245);
+	background-color: rgb(255, 255, 255);
+
+	font: 10pt &quot;微软雅黑&quot;;
+
+    border-color:#c3c3c3;
+    border-radius: 18px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_18">
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>选择校验方式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="parity_check">
+            <property name="styleSheet">
+             <string notr="true">QComboBox{
+	font: 75 9pt &quot;微软雅黑&quot;;
+    border-color: #cacaca;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+QComboBox::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>异或校验</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>奇校验</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>偶校验</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>输入：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="parity_in">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	font: 75 9pt &quot;微软雅黑&quot;;
+
+    border-color:#999999;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>输出：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="parity_out">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	font: 75 9pt &quot;微软雅黑&quot;;
+
+    border-color:#999999;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="binary">
+            <property name="styleSheet">
+             <string notr="true">QComboBox{
+	font: 75 9pt &quot;微软雅黑&quot;;
+    border-color: #cacaca;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+QComboBox::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>HEX</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>DEC</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BIN</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="checkbtn">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	font: 9pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 6px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+            </property>
+            <property name="text">
+             <string>获取校验码</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="hex">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>16进制模式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="text">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>文本模式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="base">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;固定协议传输&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>大车底盘模式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="arm">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;固定协议传输&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>大车机械臂模式</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;异或校验位&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>大车自动校验位HEX</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="checknum">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	font: 75 9pt &quot;微软雅黑&quot;;
+  
+    border-color:#999999;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="newrow">
+          <property name="styleSheet">
+           <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>发送新行</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="timesend">
+          <property name="styleSheet">
+           <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>定时发送</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="0,0,0">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string> 发送周期</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="timevalue">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	font: 75 9pt &quot;微软雅黑&quot;;
+
+    border-color:#999999;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>1000</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string> ms</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QPushButton" name="stoptimesend">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	font: 11pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+              </property>
+              <property name="text">
+               <string>停止定时发送</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_21">
+              <item>
+               <widget class="QPushButton" name="selflie">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	font: 11pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+                </property>
+                <property name="text">
+                 <string>选择文件</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="sendflie">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	font: 11pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+                </property>
+                <property name="text">
+                 <string>发送文件</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_22">
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="styleSheet">
+               <string notr="true">font: 75 8pt &quot;微软雅黑&quot;;</string>
+              </property>
+              <property name="text">
+               <string>文件路径</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="fliepath">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	font: 75 9pt &quot;微软雅黑&quot;;
+  
+    border-color:#999999;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_23"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="sclear">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+          </property>
+          <property name="text">
+           <string>清空数据</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="senddata">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="cursor">
+           <cursorShape>OpenHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+    color: #080808;
+    background-color:#ffffff;
+    border-color:#c3c3c3;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+QPushButton::hover {
+background-color:rgb(224,238,249);
+border-color: rgb(0,120,212);
+}</string>
+          </property>
+          <property name="text">
+           <string>发送数据</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

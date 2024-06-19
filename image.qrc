@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="12">12.png</file>
+        <file alias="13">13.png</file>
+        <file alias="close">close.png</file>
+        <file alias="closeswitch">closeswitch.png</file>
+        <file alias="hclose">hclose.png</file>
+        <file alias="hlarge">hlarge.png</file>
+        <file alias="hlittel">hlittel.png</file>
+        <file alias="load">load.png</file>
+        <file alias="mostlarge">mostlarge.png</file>
+        <file alias="mostlittle">mostlittle.png</file>
+        <file alias="onswitch">onswitch.png</file>
+        <file alias="port">port.png</file>
+        <file alias="stopload">stopload.png</file>
+        <file alias="portico">portico.ico</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
